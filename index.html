@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พรรคสภานักเรียน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header with Logo and Navigation -->
+        <header class="main-header">
+            <div class="logo-section">
+                <div class="logo-circle">
+    <img src="https://uploads.onecompiler.io/443s83rhw/44apbezjm/IMG_1456.png" alt="Party Logo">
+</div>
+                <div class="logo-text">
+                    <div class="party-name-th">พรรครุ่งอรุณ</div>
+                    <div class="party-name-en">PYP NEW DAWN</div>
+                </div>
+            </div>
+            
+            <!-- Horizontal Navigation Menu -->
+            <nav class="horizontal-nav">
+                <div class="nav-item active" data-page="home">หน้าหลัก</div>
+                <div class="nav-item" data-page="policy">นโยบายพรรค</div>
+                <div class="nav-item" data-page="members">สมาชิกพรรค</div>
+                <div class="nav-item" data-page="goals">เป้าหมาย</div>
+                <div class="nav-item" data-page="contact">ช่องทางการติดตาม</div>
+            </nav>
+        </header>
+
+<!-- Content Area -->
+        <div class="content-wrapper">
+            <!-- Home Page -->
+            <div class="page-content active" id="home">
+                <div class="hero-section">
+                    <h1 class="main-slogan">We do, You did</h1>
+                    <div class="sub-slogans">
+                        <p class="slogan-1">พวกเราทำ</p>
+                        <p class="slogan-2">คุณทำ</p>
+                    </div>
+                </div>
+
+                <!-- SLIDESHOW SECTION -->
+                <div class="team-photo-section">
+                    <div class="slideshow-container">
+                        <!-- Previous Button -->
+                        <button class="slide-btn prev-btn" id="prevBtn">&#10094;</button>
+                        
+                        <!-- Slide 1 -->
+                        <div class="team-photo-placeholder slide active">
+                            <p>รูปรวมสมาชิกพรรค</p>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="team-photo-placeholder slide">
+                            <p>Poster ประชาสัมพันธ์พรรค</p>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="team-photo-placeholder slide">
+                            <p>กิจกรรมพรรคในโรงเรียน</p>
+                        </div>
+                        
+                        <!-- Next Button -->
+                        <button class="slide-btn next-btn" id="nextBtn">&#10095;</button>
+                        
+                        <!-- Dots Navigation -->
+                        <div class="slide-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDESHOW SECTION -->
+
+                <div class="intro-section">
+                    <p class="intro-text">
+                        พรรคของเราพร้อมที่จะนำพาการเปลี่ยนแปลงที่ดีมาสู่โรงเรียน 
+                        ด้วยนโยบายที่ชัดเจนและทีมงานที่มีความมุ่งมั่น เราจะทำให้ทุกเสียงของนักเรียนได้รับการรับฟัง
+                    </p>
+                    <button class="read-more-btn">อ่านเพิ่มเติม</button>
+                </div>
+            </div>
+
+            <!-- Policy Page -->
+            <div class="page-content" id="policy">
+                <div class="page-header">
+                    <h2>นโยบายพรรค</h2>
+                    <p class="page-subtitle">เราให้ความสำคัญกับการพัฒนาคุณภาพการศึกษาและสภาพแวดล้อมการเรียนรู้ที่ดีสำหรับนักเรียนทุกคน</p>
+                </div>
+                <div class="horizontal-tabs">
+                    <div class="tab active" data-tab="policy-main">นโยบายหลัก</div>
+                    <div class="tab" data-tab="policy-education">ด้านการศึกษา</div>
+                    <div class="tab" data-tab="policy-activity">ด้านกิจกรรม</div>
+                </div>
+                
+                <!-- นโยบายหลัก -->
+                <div class="tab-content active" id="policy-main">
+                    <div class="policies-grid">
+                        <div class="policy-card" data-policy-id="1">
+                            <div class="policy-number">01</div>
+                            <h3 class="policy-title">กระเป๋าผ้าเพิ่มความสะดวก</h3>
+                            <p class="policy-summary">เพิ่มกระเป๋าผ้าสำหรับนักเรียนที่ต้องการความสะดวกสบายและลดการสะพายกระเป๋าหนัก</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="2">
+                            <div class="policy-number">02</div>
+                            <h3 class="policy-title">Deep Talk with Me</h3>
+                            <p class="policy-summary">พื้นที่ปรึกษาปัญหาส่วนตัวกับพี่ๆทุกเรื่อง พร้อมรับฟังและช่วยเหลืออย่างอบอุ่น</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="6">
+                            <div class="policy-number">06</div>
+                            <h3 class="policy-title">เรียนรู้งานสภานักเรียน</h3>
+                            <p class="policy-summary">เปิดโอกาสให้ผู้สนใจเรียนรู้และทดลองงานสภานักเรียนโดยไม่ทิ้งการเรียน</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="7">
+                            <div class="policy-number">07</div>
+                            <h3 class="policy-title">นโยบายไว้ผมยาว</h3>
+                            <p class="policy-summary">เพศทางเลือกสามารถไว้ผมยาวได้โดยใช้เกรด 3.5 แลกและรักษามาตรฐาน</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="8">
+                            <div class="policy-number">08</div>
+                            <h3 class="policy-title">จุดยืมร่ม</h3>
+                            <p class="policy-summary">จัดจุดยืมร่มตามจุดต่างๆ เพื่อความสะดวกในการกันแดดและกันฝน</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ด้านการศึกษา -->
+                <div class="tab-content" id="policy-education">
+                    <div class="policies-grid">
+                        <div class="policy-card" data-policy-id="4">
+                            <div class="policy-number">04</div>
+                            <h3 class="policy-title">เครื่องปริ้นสำหรับนักเรียน</h3>
+                            <p class="policy-summary">สานต่อบริการเครื่องปริ้นให้น้องๆสะดวกต่อการทำงานและไม่ต้องเสียเวลาหาที่ถ่ายเอกสาร</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="10">
+                            <div class="policy-number">10</div>
+                            <h3 class="policy-title">กระดาษใช้ซ้ำ</h3>
+                            <p class="policy-summary">จัดหากระดาษใช้ซ้ำสำหรับนักเรียนนำไปทำงานหรือใช้ประโยชน์ต่างๆ</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ด้านกิจกรรม -->
+                <div class="tab-content" id="policy-activity">
+                    <div class="policies-grid">
+                        <div class="policy-card" data-policy-id="3">
+                            <div class="policy-number">03</div>
+                            <h3 class="policy-title">พี่รหัสน้องรหัส</h3>
+                            <p class="policy-summary">กิจกรรมกระชับความสัมพันธ์ระหว่างรุ่นพี่และรุ่นน้องให้รู้จักและพูดคุยกันได้ง่ายขึ้น</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="5">
+                            <div class="policy-number">05</div>
+                            <h3 class="policy-title">กิจกรรมประกวดต่างๆ</h3>
+                            <p class="policy-summary">จัดการประกวดดาวเดือน MV เพลง หนังสั้น และดาว TikTok เปิดโอกาสให้ทุกคน</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                        
+                        <div class="policy-card" data-policy-id="9">
+                            <div class="policy-number">09</div>
+                            <h3 class="policy-title">เพจข่าวสารและกิจกรรม</h3>
+                            <p class="policy-summary">เพจสภาสำหรับแจ้งข่าวสารและกิจกรรมต่างๆ ให้นักเรียนทราบอย่างทั่วถึง</p>
+                            <button class="policy-btn">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Policy Detail Modal -->
+            <div class="policy-modal" id="policyModal">
+                <div class="modal-overlay" id="policyModalOverlay"></div>
+                <div class="modal-content policy-detail-content">
+                    <div class="modal-close" id="policyModalClose">&times;</div>
+                    <div class="policy-detail-body">
+                        <div class="policy-detail-header">
+                            <div class="policy-detail-number" id="policyDetailNumber"></div>
+                            <h2 id="policyDetailTitle"></h2>
+                        </div>
+                        
+                        <div class="policy-detail-section">
+                            <h3>รายละเอียดนโยบาย</h3>
+                            <p id="policyDetailDescription"></p>
+                        </div>
+                        
+                        <div class="policy-detail-section">
+                            <h3>การแก้ปัญหา</h3>
+                            <div id="policyDetailSolution"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members Page -->
+            <div class="page-content" id="members">
+                <div class="page-header">
+                    <h2>สมาชิกพรรค</h2>
+                </div>
+                <div class="horizontal-tabs">
+                    <div class="tab active" data-tab="members-core">แกนนำพรรค</div>
+                    <div class="tab" data-tab="members-all">สมาชิกทั้งหมด</div>
+                </div>
+                
+                <!-- Core Members -->
+                <div class="tab-content active" id="members-core">
+                    <div class="members-grid">
+                        <div class="member-card" data-member-id="1">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Leader+1" alt="แกนนำ 1">
+                            </div>
+                            <h3 class="member-name">รุจิกร กนกศรี</h3>
+                            <p class="member-role">หัวหน้าพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="2">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Leader+2" alt="แกนนำ 2">
+                            </div>
+                            <h3 class="member-name">วชิรวิทย์ วณิชาชีวะ</h3>
+                            <p class="member-role">รองหัวหน้าพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="3">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Leader+3" alt="แกนนำ 3">
+                            </div>
+                            <h3 class="member-name">ปพน นพเกตุ</h3>
+                            <p class="member-role">เลขานุการพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="4">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Leader+4" alt="แกนนำ 4">
+                            </div>
+                            <h3 class="member-name">รักษณาลี โตทิม</h3>
+                            <p class="member-role">กรรมการนักเรียน</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="5">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Leader+5" alt="แกนนำ 5">
+                            </div>
+                            <h3 class="member-name">พิมรพัชร หมื่นเดช</h3>
+                            <p class="member-role">กรรมการนักเรียน</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="6">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Leader+6" alt="แกนนำ 6">
+                            </div>
+                            <h3 class="member-name">ปรายฟ้า ผิวทองงาม</h3>
+                            <p class="member-role">กรรมการนักเรียน</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- All Members -->
+                <div class="tab-content" id="members-all">
+                    <div class="members-grid">
+                        <div class="member-card" data-member-id="7">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+1" alt="สมาชิก 1">
+                            </div>
+                            <h3 class="member-name">สุทธิพงษ์ แสงสว่าง</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="8">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+2" alt="สมาชิก 2">
+                            </div>
+                            <h3 class="member-name">จิราพร มณีรัตน์</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="9">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+3" alt="สมาชิก 3">
+                            </div>
+                            <h3 class="member-name">ปวริศ ทองคำ</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="10">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+4" alt="สมาชิก 4">
+                            </div>
+                            <h3 class="member-name">นันทิดา ศรีสุข</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="11">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+5" alt="สมาชิก 5">
+                            </div>
+                            <h3 class="member-name">ธีรพงษ์ มั่นใจ</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="12">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+6" alt="สมาชิก 6">
+                            </div>
+                            <h3 class="member-name">กัญญาณัฐ บุญมี</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="13">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+7" alt="สมาชิก 7">
+                            </div>
+                            <h3 class="member-name">อนุชา พลอยงาม</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="14">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+8" alt="สมาชิก 8">
+                            </div>
+                            <h3 class="member-name">ปภาวี สมหวัง</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="15">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+9" alt="สมาชิก 9">
+                            </div>
+                            <h3 class="member-name">ชนาธิป รุ่งเรือง</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                        
+                        <div class="member-card" data-member-id="16">
+                            <div class="member-photo">
+                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+10" alt="สมาชิก 10">
+                            </div>
+                            <h3 class="member-name">วรรณิดา เพชรรัตน์</h3>
+                            <p class="member-role">สมาชิกพรรค</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member Detail Modal -->
+            <div class="member-modal" id="memberModal">
+                <div class="modal-overlay" id="modalOverlay"></div>
+                <div class="modal-content">
+                    <div class="modal-close" id="modalClose">&times;</div>
+                    <div class="modal-body">
+                        <div class="modal-photo">
+                            <img id="modalPhoto" src="" alt="">
+                        </div>
+                        <div class="modal-info">
+                            <h2 id="modalName"></h2>
+                            <p class="modal-role" id="modalRole"></p>
+                            
+                            <div class="info-section">
+                                <h3>ข้อมูลส่วนตัว</h3>
+                                <p id="modalPersonal"></p>
+                            </div>
+                            
+                            <div class="info-section">
+                                <h3>ข้อมูลการศึกษา</h3>
+                                <p id="modalEducation"></p>
+                            </div>
+                            
+                            <div class="info-section">
+                                <h3>ความสนใจ</h3>
+                                <p id="modalInterest"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goals Page -->
+            <div class="page-content" id="goals">
+                <div class="page-header">
+                    <h2>เป้าหมาย</h2>
+                </div>
+                <div class="horizontal-tabs">
+                    <div class="tab active" data-tab="goals-short">ระยะสั้น</div>
+                    <div class="tab" data-tab="goals-long">ระยะยาว</div>
+                </div>
+                <div class="tab-content active" id="goals-short">
+                    <div class="content-box">
+                        <h3>เป้าหมายระยะสั้น</h3>
+                        <p>ปรับปรุงสิ่งอำนวยความสะดวกพื้นฐานและตอบสนองความต้องการเร่งด่วนของนักเรียน</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="goals-long">
+                    <div class="content-box">
+                        <h3>เป้าหมายระยะยาว</h3>
+                        <p>สร้างระบบที่ยั่งยืนและพัฒนาโรงเรียนให้ก้าวหน้าอย่างต่อเนื่อง</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Page -->
+            <div class="page-content" id="contact">
+                <div class="page-header">
+                    <h2>ช่องทางการติดตาม</h2>
+                </div>
+                <div class="horizontal-tabs">
+                    <div class="tab active" data-tab="contact-social">โซเชียลมีเดีย</div>
+                    <div class="tab" data-tab="contact-direct">ติดต่อโดยตรง</div>
+                </div>
+                <div class="tab-content active" id="contact-social">
+                    <div class="content-box">
+                        <h3>ช่องทางโซเชียลมีเดีย</h3>
+                        <p>ติดตามข่าวสารและกิจกรรมของพรรคได้ที่:</p>
+                        <ul>
+                            <li>Facebook: @YourPartyPage</li>
+                            <li>Instagram: @yourparty</li>
+                            <li>Twitter: @yourparty</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="contact-direct">
+                    <div class="content-box">
+                        <h3>ติดต่อโดยตรง</h3>
+                        <p>สามารถติดต่อสอบถามหรือให้ความคิดเห็นได้ที่:</p>
+                        <ul>
+                            <li>Email: contact@yourparty.com</li>
+                            <li>Line: @yourparty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
