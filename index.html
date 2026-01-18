@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พรรคสภานักเรียน</title>
+    <title>PYP NEW DAWN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
         <header class="main-header">
             <div class="logo-section">
                 <div class="logo-circle">
-    <img src="https://uploads.onecompiler.io/443s83rhw/44apbezjm/IMG_1456.png" alt="Party Logo">
-</div>
+                    <img src="https://uploads.onecompiler.io/443s83rhw/44apbezjm/IMG_1456.png" alt="Party Logo">
+                </div>
                 <div class="logo-text">
                     <div class="party-name-th">พรรครุ่งอรุณ</div>
                     <div class="party-name-en">PYP NEW DAWN</div>
@@ -32,7 +32,7 @@
             </nav>
         </header>
 
-<!-- Content Area -->
+        <!-- Content Area -->
         <div class="content-wrapper">
             <!-- Home Page -->
             <div class="page-content active" id="home">
@@ -44,31 +44,52 @@
                     </div>
                 </div>
 
+                <!-- Countdown Section -->
+                <div class="countdown-section">
+                    <h3 class="countdown-title">นับเวลาถึงวันเลือกตั้ง</h3>
+                    <div class="countdown-timer">
+                        <div class="time-box">
+                            <div class="time-value" id="weeks">0</div>
+                            <div class="time-label">สัปดาห์</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="time-value" id="days">0</div>
+                            <div class="time-label">วัน</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="time-value" id="hours">0</div>
+                            <div class="time-label">ชั่วโมง</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="time-value" id="minutes">0</div>
+                            <div class="time-label">นาที</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="time-value" id="seconds">0</div>
+                            <div class="time-label">วินาที</div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- SLIDESHOW SECTION -->
                 <div class="team-photo-section">
                     <div class="slideshow-container">
-                        <!-- Previous Button -->
                         <button class="slide-btn prev-btn" id="prevBtn">&#10094;</button>
                         
-                        <!-- Slide 1 -->
                         <div class="team-photo-placeholder slide active">
                             <p>รูปรวมสมาชิกพรรค</p>
                         </div>
                         
-                        <!-- Slide 2 -->
                         <div class="team-photo-placeholder slide">
                             <p>Poster ประชาสัมพันธ์พรรค</p>
                         </div>
                         
-                        <!-- Slide 3 -->
                         <div class="team-photo-placeholder slide">
                             <p>กิจกรรมพรรคในโรงเรียน</p>
                         </div>
                         
-                        <!-- Next Button -->
                         <button class="slide-btn next-btn" id="nextBtn">&#10095;</button>
                         
-                        <!-- Dots Navigation -->
                         <div class="slide-dots">
                             <span class="dot active" data-slide="0"></span>
                             <span class="dot" data-slide="1"></span>
@@ -76,7 +97,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- END SLIDESHOW SECTION -->
 
                 <div class="intro-section">
                     <p class="intro-text">
@@ -99,12 +119,11 @@
                     <div class="tab" data-tab="policy-activity">ด้านกิจกรรม</div>
                 </div>
                 
-                <!-- นโยบายหลัก -->
                 <div class="tab-content active" id="policy-main">
                     <div class="policies-grid">
                         <div class="policy-card" data-policy-id="1">
                             <div class="policy-number">01</div>
-                            <h3 class="policy-title">กระเป๋าผ้าเพิ่มความสะดวก</h3>
+                            <h3 class="policy-title">กระเป๋าสะพายข้าง</h3>
                             <p class="policy-summary">เพิ่มกระเป๋าผ้าสำหรับนักเรียนที่ต้องการความสะดวกสบายและลดการสะพายกระเป๋าหนัก</p>
                             <button class="policy-btn">อ่านเพิ่มเติม</button>
                         </div>
@@ -118,7 +137,7 @@
                         
                         <div class="policy-card" data-policy-id="6">
                             <div class="policy-number">06</div>
-                            <h3 class="policy-title">เรียนรู้งานสภานักเรียน</h3>
+                            <h3 class="policy-title">พี่สภาน้องสภา</h3>
                             <p class="policy-summary">เปิดโอกาสให้ผู้สนใจเรียนรู้และทดลองงานสภานักเรียนโดยไม่ทิ้งการเรียน</p>
                             <button class="policy-btn">อ่านเพิ่มเติม</button>
                         </div>
@@ -139,7 +158,6 @@
                     </div>
                 </div>
                 
-                <!-- ด้านการศึกษา -->
                 <div class="tab-content" id="policy-education">
                     <div class="policies-grid">
                         <div class="policy-card" data-policy-id="4">
@@ -158,7 +176,6 @@
                     </div>
                 </div>
                 
-                <!-- ด้านกิจกรรม -->
                 <div class="tab-content" id="policy-activity">
                     <div class="policies-grid">
                         <div class="policy-card" data-policy-id="3">
@@ -219,7 +236,6 @@
                     <div class="tab" data-tab="members-all">สมาชิกทั้งหมด</div>
                 </div>
                 
-                <!-- Core Members -->
                 <div class="tab-content active" id="members-core">
                     <div class="members-grid">
                         <div class="member-card" data-member-id="1">
@@ -271,91 +287,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- All Members -->
-                <div class="tab-content" id="members-all">
-                    <div class="members-grid">
-                        <div class="member-card" data-member-id="7">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+1" alt="สมาชิก 1">
-                            </div>
-                            <h3 class="member-name">สุทธิพงษ์ แสงสว่าง</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="8">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+2" alt="สมาชิก 2">
-                            </div>
-                            <h3 class="member-name">จิราพร มณีรัตน์</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="9">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+3" alt="สมาชิก 3">
-                            </div>
-                            <h3 class="member-name">ปวริศ ทองคำ</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="10">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+4" alt="สมาชิก 4">
-                            </div>
-                            <h3 class="member-name">นันทิดา ศรีสุข</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="11">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+5" alt="สมาชิก 5">
-                            </div>
-                            <h3 class="member-name">ธีรพงษ์ มั่นใจ</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="12">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+6" alt="สมาชิก 6">
-                            </div>
-                            <h3 class="member-name">กัญญาณัฐ บุญมี</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="13">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+7" alt="สมาชิก 7">
-                            </div>
-                            <h3 class="member-name">อนุชา พลอยงาม</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="14">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/8e2de2/ffffff?text=Member+8" alt="สมาชิก 8">
-                            </div>
-                            <h3 class="member-name">ปภาวี สมหวัง</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="15">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/4a00e0/ffffff?text=Member+9" alt="สมาชิก 9">
-                            </div>
-                            <h3 class="member-name">ชนาธิป รุ่งเรือง</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                        
-                        <div class="member-card" data-member-id="16">
-                            <div class="member-photo">
-                                <img src="https://via.placeholder.com/300x300/ff6b35/ffffff?text=Member+10" alt="สมาชิก 10">
-                            </div>
-                            <h3 class="member-name">วรรณิดา เพชรรัตน์</h3>
-                            <p class="member-role">สมาชิกพรรค</p>
-                        </div>
-                    </div>
-                </div>
             </div>
             
             <!-- Member Detail Modal -->
@@ -402,13 +333,13 @@
                 <div class="tab-content active" id="goals-short">
                     <div class="content-box">
                         <h3>เป้าหมายระยะสั้น</h3>
-                        <p>ปรับปรุงสิ่งอำนวยความสะดวกพื้นฐานและตอบสนองความต้องการเร่งด่วนของนักเรียน</p>
+                        <p>การพิสูจน์ว่าเราทำได้จริงในช่วงแรก และสิ่งที่เราพูดไปต้องทำได้</p>
                     </div>
                 </div>
                 <div class="tab-content" id="goals-long">
                     <div class="content-box">
                         <h3>เป้าหมายระยะยาว</h3>
-                        <p>สร้างระบบที่ยั่งยืนและพัฒนาโรงเรียนให้ก้าวหน้าอย่างต่อเนื่อง</p>
+                        <p>พัฒนาโรงเรียนให้ผู้เรียน ทำกิจกรรมได้อย่างมีประสิทธิภาพ ระบบการทำงานเป็นระเบียบ</p>
                     </div>
                 </div>
             </div>
@@ -427,9 +358,7 @@
                         <h3>ช่องทางโซเชียลมีเดีย</h3>
                         <p>ติดตามข่าวสารและกิจกรรมของพรรคได้ที่:</p>
                         <ul>
-                            <li>Facebook: @YourPartyPage</li>
-                            <li>Instagram: @yourparty</li>
-                            <li>Twitter: @yourparty</li>
+                            <li>Instagram: @pypnewdawn</li>   
                         </ul>
                     </div>
                 </div>

@@ -440,6 +440,121 @@ body {
         right: 5px;
     }
 }
+
+/* Countdown Section */
+.countdown-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 40px 0;
+    animation: fadeInUp 1.2s ease;
+}
+
+.countdown-title {
+    font-size: 36px;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--white) 0%, var(--orange-bright) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 15px rgba(245, 124, 0, 0.3));
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.time-box {
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.6) 0%, rgba(40, 53, 147, 0.6) 100%);
+    border-radius: 20px;
+    padding: 25px 20px;
+    min-width: 120px;
+    border: 2px solid rgba(245, 124, 0, 0.3);
+    box-shadow: 
+        0 10px 35px rgba(26, 35, 126, 0.5),
+        0 5px 20px rgba(245, 124, 0, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.time-box:hover {
+    transform: translateY(-8px);
+    border-color: var(--orange-bright);
+    box-shadow: 
+        0 15px 45px rgba(245, 124, 0, 0.6),
+        0 10px 30px rgba(26, 35, 126, 0.6);
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.8) 0%, rgba(57, 73, 171, 0.8) 100%);
+}
+
+.time-value {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-bright) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 4px 12px rgba(245, 124, 0, 0.4));
+}
+
+.time-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive for Countdown */
+@media (max-width: 768px) {
+    .countdown-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .countdown-timer {
+        gap: 15px;
+    }
+    
+    .time-box {
+        min-width: 90px;
+        padding: 20px 15px;
+    }
+    
+    .time-value {
+        font-size: 36px;
+    }
+    
+    .time-label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-title {
+        font-size: 24px;
+    }
+    
+    .time-box {
+        min-width: 70px;
+        padding: 15px 10px;
+    }
+    
+    .time-value {
+        font-size: 28px;
+    }
+    
+    .time-label {
+        font-size: 12px;
+    }
+}
+
 /* Intro Section */
 .intro-section {
     text-align: center;
